@@ -1,8 +1,6 @@
 from turtle import *
 import random
 
-# Draw random walk
-
 # Setting color to RGB
 Screen().colormode(255)
 
@@ -14,8 +12,12 @@ def change_color():
     return colours
 
 
-move_ang = [0, 90, 180, 270]
+tim = Turtle()
 tim.pensize(5)
+
+# moving direction
+move_ang = [0, 90, 180, 270]
+
 for _ in range(500):
     tim.pencolor(change_color())
     tim.setheading(random.choice(move_ang))
